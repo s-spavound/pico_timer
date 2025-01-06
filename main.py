@@ -3,7 +3,7 @@ from time import sleep
 import tm1637
 from utime import sleep
 
-tm = tm1637.TM1637(clk=Pin(4), dio=Pin(5))
+tm = tm1637.TM1637(clk=Pin(5), dio=Pin(4))
 RoA_Pin = 0    # CLK
 RoB_Pin = 1    # DT
 Btn_Pin = 2    # SW
@@ -72,6 +72,3 @@ def loop():
 if __name__ == '__main__':    
     setup() 
     loop() 
-
-
-
